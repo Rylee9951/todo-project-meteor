@@ -17,7 +17,7 @@ Template.task.events({
   "click .delete"() {
     Meteor.call("tasks.remove", this._id)
   },
-  "click .toggle-private"() {
+  "click .toggle-private-switch"() {
     Meteor.call("tasks.setPrivate", this._id, !this.private)
   },
 })

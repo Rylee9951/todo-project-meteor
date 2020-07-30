@@ -3,11 +3,14 @@
     <button class="delete">&times;</button>
 
     <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
-
+    <label class="switch">
+      <input type="checkbox" class="toggle-private-switch" />
+      <span class="slider round"></span>
+    </label>
     {{#if isOwner}}
-    <button class="toggle-private">
+    <span class="toggle-private">
       {{#if private}} Private {{else}} Public {{/if}}
-    </button>
+    </span>
     {{/if}}
 
     <span class="text"><strong>{{username}}</strong> - {{text}}</span>
